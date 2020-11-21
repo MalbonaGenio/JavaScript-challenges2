@@ -12,11 +12,11 @@ But if you dont pass a value to your parameter food, it should print
 
 */
 
-const printfood = (food = "something")  => {
+const printFood = (food = "something")  => {
 	console.log(`I'm going to buy ${food} from the grocery shop`)
 	} //As we are only passing one value we could write the function without the { } an it will still work. If we did not have a default param on the argument it's also possible to not use  the ( )
 
 	//const printfood = food  => console.log(`I'm going to buy ${food} from the grocery shop`)
 
-printfood("milk") //input a string in ""
+printFood("milk") //input a string in ""
 
