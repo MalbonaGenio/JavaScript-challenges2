@@ -28,3 +28,22 @@ class Player {
 let iu = new Player("Iu", "Catalonia")
 //calls the function inside the class, it will use the argument set in the instance creation
 iu.playerInfo()
+
+class TennisPlayer extends Player {
+
+	//asign the values for the new class, with super we pass the values from the Player class and the new age value is set up as usual.
+	constructor (name, country, age) {
+		super (name, country)
+		this.age = age
+	}
+	 
+	//dynamically we get the values from the instance of TennisPlayer and print the info.
+	tennisPlayerInfo() {
+		console.log(`The player ${this.name}, is ${this.age} years old. And knows how to play tennis.`)
+	}
+}
+
+//Create a new isntance of TennisPlayer pass the arguments and call the function inside the class
+let carles = new TennisPlayer("Carles", "Catalonia", 34)
+carles.tennisPlayerInfo()
+
