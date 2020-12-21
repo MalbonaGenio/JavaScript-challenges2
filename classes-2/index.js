@@ -28,3 +28,5 @@ console.log(film1.director)
 
 film1.addGenre("horror")
 console.log(film1.genres)
+
+console.log(film1.getFilmTitle())
